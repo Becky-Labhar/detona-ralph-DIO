@@ -1,36 +1,52 @@
-## Awesome JSGame Detona Ralph
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Ralph - Jogo de Reflexos</title>
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header class="menu">
+            <div class="menu-time">
+                <h2>Time Left</h2>
+                <h2>60</h2>
+            </div>
+            <div class="menu-score">
+                <h2>Your Score</h2>
+                <h2>0</h2>
+            </div>
+        </header>
 
-<p align="center">
-  <img src="https://github.com/digitalinnovationone/jsgame-detona-ralph/raw/main/assets/images/logo.png" alt="JSGame Detona Ralph Logo">
-</p>
-
-Bem-vindo ao **JSGame Detona Ralph**! Neste repositório, você encontrará um jogo divertido baseado no famoso filme "Detona Ralph". Este projeto não apenas oferece entretenimento, mas também demonstra várias técnicas avançadas de desenvolvimento de jogos em JavaScript.
-
-### Tecnologias Utilizadas
-
-- HTML5 e CSS3 para a estrutura e aparência do jogo.
-- JavaScript para a lógica de programação e interatividade.
-- Sprites e imagens customizadas para criar a estética única do universo de Detona Ralph.
-
-### Funcionalidades Incríveis
-
-- **Sistema de Pontuação**: Acompanhe sua pontuação à medida que progride no jogo e desafie seus amigos a superá-la, clique no quadrado que o Ralph se encontre
-
-### Como Jogar
-
-1. Clone este repositório para sua máquina local.
-2. Abra o arquivo `index.html` em seu navegador web.
-3. Use as setas direcionais para mover o personagem e a barra de espaço para interagir.
-4. Divirta-se explorando e coletando moedas, mas fique atento aos inimigos!
-
-### Contribuição
-
-Contribuições são bem-vindas! Se você deseja melhorar este jogo, adicionar novos recursos ou corrigir problemas, sinta-se à vontade para abrir um _pull request_.
-
-### Créditos
-
-Este jogo foi desenvolvido como parte de um projeto educacional da Digital Innovation One.
-
----
-
-Divirta-se jogando o **JSGame Detona Ralph** enquanto explora as técnicas modernas de desenvolvimento de jogos em JavaScript. Lembre-se de conferir o repositório original [aqui](https://github.com/digitalinnovationone/jsgame-detona-ralph) e deixar uma ⭐️ se você gostou do projeto!
+        <main class="panel">
+            <div class="panel-row">
+                <div class="square" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Script -->
+    <script defer src="./src/scripts/engine.js"></script>
+</body>
+</html>
